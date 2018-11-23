@@ -59,13 +59,11 @@ for (let i = 0; i < 10; i++) {
   topTenValues.push(values[i]);
 }
 //console.log(topTenValues);
-toptenbol=[]
+toptenbol={}
 for(let i =0 ;i<topTenValues.length;i++)
   for(let j in economylist)
   if(topTenValues[i]==economylist[j]){
-    obj={}
-    obj[j]=topTenValues[i];
-    toptenbol[i]=obj;
+    toptenbol[j]=topTenValues[i];
   }
   console.log(toptenbol);
 }
